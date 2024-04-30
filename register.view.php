@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Variables</title>
+    <title>Register Form</title>
 </head>
-
 <body>
-    <h1><?= $title ?></h1>
-    <form action="login.php" method="POST">
+    <h2>Register Form</h2>
+    <form method="POST" action="register.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
+
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br><br>
-        <input type="submit" value="Login">
+
+        <input type="submit" value="Register">
     </form>
 </body>
-
 </html>
